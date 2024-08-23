@@ -1,0 +1,450 @@
+ISOTHERMS OF CHOLESTEROL / DIPLOPTEROL AND UNSATURATED PHOSPHOLIPIDS DOUBLE BOND POSITION ISOMERS
+
+SAMPLE:
+- Pure lipids (5): cholesterol, diplopterol, DOPC-Δ6, DOPC-Δ9, DOPC-Δ11
+- Mix with cholesterol (33%) (3): DOPC-Δ6, DOPC-Δ9, DOPC-Δ11
+- Mix with diplopterol (33%) (3): DOPC-Δ6, DOPC-Δ9, DOPC-Δ11
+
+This code will:
+- Draw out a pallette for all raw isotherms
+- Fit this data to a function (1/x^2 ∼ y), to check significance
+- Isotherms for averaged data based on fit
+- Calculate and plot condensation effect
+- Calculate and plot ΔG
+
+```{r LIBRARIES}
+#import library
+
+library(tidyverse)
+library(esquisse)
+```
+
+First step to input all data points
+```{r RAW curves}
+#SET UP DATABASE
+
+setwd("~/Desktop/Research/Data/Kibron")
+compile_raw <- tibble()
+
+#pure lipids
+
+#DOPC-Δ6
+pure_6_1 <- read_delim("220904 6 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+pure_6_2 <- read_delim("220810 6 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+pure_6_3 <- read_delim("220810 6 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- tibble(pressure=pure_6_1[,6], area= pure_6_1[,3]*2, sample ='0DOPC-Δ06', replica = '1',db='06', mix='0null')  
+#2 following database I didn't write down number correctly from software
+compile_raw <- add_row(compile_raw, pressure=pure_6_2[,6], area= pure_6_2[,3]*2*0.676, sample ='0DOPC-Δ06', replica = '2',db='06', mix='0null')  
+compile_raw <- add_row(compile_raw, pressure=pure_6_3[,6], area= pure_6_3[,3]*2*0.676, sample ='0DOPC-Δ06', replica = '3',db='06', mix='0null')
+
+#DOPC-Δ9
+pure_9_1 <- read_delim("220905 9 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+pure_9_2 <- read_delim("220905 9 6.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+pure_9_3 <- read_delim("220905 9 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=pure_9_1[,6], area= pure_9_1[,3]*2, sample ='0DOPC-Δ09', replica = '1',db='09', mix='0null')  
+compile_raw <- add_row(compile_raw, pressure=pure_9_2[,6], area= pure_9_2[,3]*2, sample ='0DOPC-Δ09', replica = '2',db='09', mix='0null')  
+compile_raw <- add_row(compile_raw, pressure=pure_9_3[,6], area= pure_9_3[,3]*2, sample ='0DOPC-Δ09', replica = '3',db='09', mix='0null')
+
+#DOPC-Δ11
+pure_11_1 <- read_delim("220904 11 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+pure_11_2 <- read_delim("220904 11 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+pure_11_3 <- read_delim("221019 11 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=pure_11_1[,6], area= pure_11_1[,3]*2, sample ='0DOPC-Δ11', replica = '1',db='11', mix='0null')
+compile_raw <- add_row(compile_raw, pressure=pure_11_2[,6], area= pure_11_2[,3]*2, sample ='0DOPC-Δ11', replica = '2',db='11', mix='0null')
+compile_raw <- add_row(compile_raw, pressure=pure_11_3[,6], area= pure_11_3[,3]*2, sample ='0DOPC-Δ11', replica = '3',db='11', mix='0null')
+
+
+#chol mix
+
+
+#DOPC-Δ6
+chol_6_1 <- read_delim("220911 chol6 33 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_6_2 <- read_delim("220911 chol6 33 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_6_3 <- read_delim("220911 chol6 33 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=chol_6_1[,6], area= chol_6_1[,3]*5/3, sample ='1:2 Chol:DOPC-Δ06', replica = '1',db='06', mix='chol')  
+compile_raw <- add_row(compile_raw, pressure=chol_6_2[,6], area= chol_6_2[,3]*5/3, sample ='1:2 Chol:DOPC-Δ06', replica = '2',db='06', mix='chol')  
+compile_raw <- add_row(compile_raw, pressure=chol_6_3[,6], area= chol_6_3[,3]*5/3, sample ='1:2 Chol:DOPC-Δ06', replica = '3',db='06', mix='chol')
+
+#DOPC-Δ9
+chol_9_1 <- read_delim("220908 chol9 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_9_2 <- read_delim("220908 chol9 4.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_9_3 <- read_delim("220908 chol9 5.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=chol_9_1[,6], area= chol_9_1[,3]*5/3, sample ='1:2 Chol:DOPC-Δ09', replica = '1',db='09', mix='chol')  
+compile_raw <- add_row(compile_raw, pressure=chol_9_2[,6], area= chol_9_2[,3]*5/3, sample ='1:2 Chol:DOPC-Δ09', replica = '2',db='09', mix='chol')  
+compile_raw <- add_row(compile_raw, pressure=chol_9_3[,6], area= chol_9_3[,3]*5/3, sample ='1:2 Chol:DOPC-Δ09', replica = '3',db='09', mix='chol')
+
+#DOPC-Δ11
+chol_11_1 <- read_delim("220909 chol11 33 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_11_2 <- read_delim("220909 chol11 33 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_11_3 <- read_delim("220909 chol11 33 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=chol_11_1[,6], area= chol_11_1[,3]*5/3, sample ='1:2 Chol:DOPC-Δ11', replica = '1',db='11', mix='chol')
+compile_raw <- add_row(compile_raw, pressure=chol_11_2[,6], area= chol_11_2[,3]*5/3, sample ='1:2 Chol:DOPC-Δ11', replica = '2',db='11', mix='chol')  
+compile_raw <- add_row(compile_raw, pressure=chol_11_3[,6], area= chol_11_3[,3]*5/3, sample ='1:2 Chol:DOPC-Δ11', replica = '3',db='11', mix='chol')
+
+
+
+#dip mix
+
+#DOPC-Δ6
+dip_6_1 <- read_delim("220905 dip6 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_6_2 <- read_delim("220905 dip6 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_6_3 <- read_delim("220905 dip6 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=dip_6_1[,6], area= dip_6_1[,3]*5/3, sample ='1:2 Dip:DOPC-Δ06', replica = '1',db='06',mix='dip')  
+compile_raw <- add_row(compile_raw, pressure=dip_6_2[,6], area= dip_6_2[,3]*5/3, sample ='1:2 Dip:DOPC-Δ06', replica = '2',db='06',mix='dip')  
+compile_raw <- add_row(compile_raw, pressure=dip_6_3[,6], area= dip_6_3[,3]*5/3, sample ='1:2 Dip:DOPC-Δ06', replica = '3',db='06',mix='dip')
+
+#DOPC-Δ9
+dip_9_1 <- read_delim("220907 dip9 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_9_2 <- read_delim("220907 dip9 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_9_3 <- read_delim("220907 dip9 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=dip_9_1[,6], area= dip_9_1[,3]*5/3, sample ='1:2 Dip:DOPC-Δ09', replica = '1',db='09',mix='dip')  
+compile_raw <- add_row(compile_raw, pressure=dip_9_2[,6], area= dip_9_2[,3]*5/3, sample ='1:2 Dip:DOPC-Δ09', replica = '2',db='09',mix='dip')  
+compile_raw <- add_row(compile_raw, pressure=dip_9_3[,6], area= dip_9_3[,3]*5/3, sample ='1:2 Dip:DOPC-Δ09', replica = '3',db='09',mix='dip')
+
+#DOPC-Δ11
+dip_11_1 <- read_delim("220905 dip11 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_11_2 <- read_delim("220906 dip11 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_11_3 <- read_delim("221019 dip11 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_raw <- add_row(compile_raw, pressure=dip_11_1[,6], area= dip_11_1[,3]*5/3, sample ='1:2 Dip:DOPC-Δ11', replica = '1',db='11',mix='dip')
+compile_raw <- add_row(compile_raw, pressure=dip_11_2[,6], area= dip_11_2[,3]*5/3, sample ='1:2 Dip:DOPC-Δ11', replica = '2',db='11',mix='dip')
+compile_raw <- add_row(compile_raw, pressure=dip_11_3[,6], area= dip_11_3[,3]*5/3, sample ='1:2 Dip:DOPC-Δ11', replica = '3',db='11',mix='dip')
+```
+
+```{r RAW CHOLESTEROL + DIPLOPTEROL}
+#input chol
+
+setwd("~/Desktop/Research/Data/Kibron")
+compile_chol <- tibble()
+
+#input
+chol_1 <- read_delim("220818 chol 3.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_2 <- read_delim("220818 chol 5.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+chol_3 <- read_delim("220818 chol 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_chol <- tibble(pressure=chol_1[,6], area= chol_1[,3]*397/337, replica = '1')  
+compile_chol <- add_row(compile_chol, pressure=chol_2[,6], area= chol_2[,3]*397/337, replica = '2')  
+compile_chol <- add_row(compile_chol, pressure=chol_3[,6], area= chol_3[,3]*397/337, replica = '3')
+
+compile_dip <- tibble()
+
+#input data
+dip_1 <- read_delim("220906 dip 1.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_2 <- read_delim("220929 dip.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+dip_3 <- read_delim("220913 dip 2.ntb",";", escape_double = FALSE, trim_ws = TRUE,skip = 87)
+
+compile_dip <- tibble(pressure=dip_1[,6], area= dip_1[,3]/0.99, replica = '1')  
+compile_dip <- add_row(compile_dip, pressure=dip_2[,6], area= dip_2[,3]/0.99, replica = '2')  
+compile_dip <- add_row(compile_dip, pressure=dip_3[,6], area= dip_3[,3]/0.99, replica = '3')
+
+```
+
+```{r raw data PLOT}
+#PLOT RAW DATA + REPLICATES
+
+ggplot(compile_raw, aes(x = area$Area, y = pressure$Pressure))  +
++     theme_bw()+
++     xlim(50,120)+
++     geom_point(size=0.2,alpha=0.1 )+
++     facet_wrap(vars(sample), nrow = 3L)+
++     labs(y="Surface pressure (mN/m)", x='Area (A/molecule)')+
++     theme(aspect.ratio = 1)
+```
+
+```{r FIT + STATISTIC}
+#Fit to model
+
+#so far this model fits best, however if you look at residual (I still couldn't figure out how to plot that yet), it has some patterns suggesting this is not a good fit. I'm gonna use this for anova, but not for further plots maybe
+fitted_models = compile_raw %>% group_by(sample, replica) %>% filter(pressure$Pressure > 5)%>% do(model = lm(((1/area$Area)^2 ~ pressure$Pressure), data = .))
+fitted_models$model
+
+#plot fit vs model
+ggplot(data = compile_raw %>% filter(pressure$Pressure > 3), aes(x = (1/area$Area)^2, y = (pressure$Pressure),group=sample, color = sample))+
+  geom_point(size=0.1)+ 
+  geom_smooth(method = "lm", color="black") +
+  facet_wrap(vars(sample))+
+  theme_light()
+
+#log fit coefficients in table
+#replica <- c(1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3)
+
+options("scipen"=100, "digits"=4)
+
+type <- c('0null', '0null', '0null','0null', '0null', '0null','0null', '0null','0null','chol','chol','chol','chol','chol','chol','chol','chol','chol','dip','dip','dip','dip','dip','dip','dip','dip','dip')
+db<- c ('DOPC-Δ06','DOPC-Δ06','DOPC-Δ06','DOPC-Δ09','DOPC-Δ09','DOPC-Δ09','DOPC-Δ11','DOPC-Δ11','DOPC-Δ11','DOPC-Δ06','DOPC-Δ06','DOPC-Δ06','DOPC-Δ09','DOPC-Δ09','DOPC-Δ09','DOPC-Δ11','DOPC-Δ11','DOPC-Δ11','DOPC-Δ06','DOPC-Δ06','DOPC-Δ06','DOPC-Δ09','DOPC-Δ09','DOPC-Δ09','DOPC-Δ11','DOPC-Δ11','DOPC-Δ11')
+coef <- tibble()
+for (i in 1:27)
+{
+  coef_temp <- tibble(fitted_models[[3]][[i]]$coefficients[1],fitted_models[[3]][[i]]$coefficients[2])
+  coef<- rbind(coef, coef_temp)
+}
+coef <- bind_cols(db,type,coef)
+colnames(coef) <- c('db','type','coef1','coef2')
+fit <- coef %>% 
+  group_by(db,type) %>% 
+  summarise(slope = mean(coef2), intercept =mean(coef1))
+
+write_xlsx(coef,"~/Desktop/DB manuscript///230905 coef.xlsx")
+
+
+#anova: https://www.scribbr.com/statistics/two-way-anova/
+
+stat_coef <- manova(cbind(coef1, coef2) ~ db, data = coef%>% filter(type == "dip"))
+summary(stat_coef)
+
+#or just net compare the ditribution of all curve
+statt <- aov(area$Area ~ db, data = compile_raw%>% filter(mix == "dip"))
+summary(statt)
+TukeyHSD(statt)
+#running this code should give you statistics to add to paper. They are all valid
+#plug-in t t-test (optional)
+#a <- coef%>%filter(db %in% c('DOPC-Δ06','DOPC-Δ09'))%>%filter(type == 'chol')
+#tstats <- t.test(coef1 ~ db, data = a)
+#summary(tstats)
+```
+
+```{r input data from approximation}
+#create table for average data
+compile_calc <- compile_raw%>% filter(between (pressure$Pressure, 0.9,30.3))
+compile_calc <- compile_calc%>% mutate(compile_calc, pressure=round(pressure$Pressure, digits = 0)) 
+
+pure_calc <- compile_calc %>%filter(mix =='0null')%>%group_by(db, pressure)%>% summarise(average=mean(area$Area),stdev = sd(area$Area)) 
+pure_calc[is.na(pure_calc)] <- 0
+
+mix_chol_calc <- compile_calc %>%filter(mix =='chol')%>%group_by(db, pressure)%>% summarise(average=mean(area$Area),stdev = sd(area$Area)) 
+mix_chol_calc[is.na(mix_chol_calc)] <- 0
+
+mix_dip_calc <- compile_calc %>%filter(mix =='dip')%>%group_by(db, pressure)%>% summarise(average=mean(area$Area),stdev = sd(area$Area)) 
+mix_dip_calc[is.na(mix_dip_calc)] <- 0
+
+#sanity plot
+ggplot(data = pure_calc%>% filter(pressure <31), aes(x = average, y = pressure))+
+  geom_point(size=0.1)+
+  theme_light()
+```
+
+```{r input dip from approximation}
+#DIPLOPTEROL
+#input data from approximation
+dip_calc <- compile_dip%>% filter(between(pressure$Pressure, 0.9, 30) )
+dip_calc <- dip_calc%>% mutate(dip_calc, pressure=round(pressure$Pressure, digits = 0)) 
+dip_calc <- dip_calc %>%group_by(pressure)%>% summarise(average=mean(area$Area),stdev = sd(area$Area)) 
+dip_calc[is.na(dip_calc)] <- 0
+
+```
+
+```{r input chol from fit}
+
+#CHOLESTEROL
+#model fit
+fitted_chol = compile_chol %>% group_by(replica) %>% filter(pressure$Pressure > 1)%>% do(model = lm(area$Area ~ pressure$Pressure, data = .))
+fitted_chol$model
+
+#plot fit vs model
+ggplot(data = compile_chol%>% filter(between(pressure$Pressure,1,31)), aes(x = area$Area, y = pressure$Pressure, color=replica))+
+  geom_point(size=0.1)+
+  geom_smooth(method = "lm")+
+  xlim(30,50)+
+  theme_light()
+
+#dataframe from fit for calculation
+chol_calc <- tibble()
+for (i in 1:30){
+  chol_fit_1 <- tibble(pressure = i, area = fitted_chol[[2]][[1]]$coefficients[1] + i*fitted_chol[[2]][[1]]$coefficients[2], replica ='1')
+  chol_fit_2 <- tibble(pressure = i, area = fitted_chol[[2]][[2]]$coefficients[1] + i*fitted_chol[[2]][[2]]$coefficients[2], replica ='2')
+  chol_fit_3 <- tibble(pressure = i, area = fitted_chol[[2]][[3]]$coefficients[1] + i*fitted_chol[[2]][[3]]$coefficients[2], replica ='3')
+  chol_calc <- rbind(chol_calc,chol_fit_1,chol_fit_2,chol_fit_3)
+}
+
+chol_calc <- chol_calc%>% mutate(chol_calc, pressure=round(pressure, digits = 0)) 
+chol_calc <- chol_calc %>%group_by(pressure)%>% summarise(average=mean(area),stdev = sd(area)) 
+chol_calc[is.na(chol_calc)] <- 0
+
+#plot fit vs model
+ggplot(data = chol_calc%>% filter(pressure <31), aes(x = average, y = pressure))+
+  geom_point(size=0.1)+
+  xlim(30,50)+
+  theme_light()
+```
+
+```{r PANEL 1 ISOTHERMS}
+#Panel isotherms
+  #geom_point(data = compile_raw%>%filter(mix=='chol'), aes(x = area$Area, y = pressure$Pressure, color = db), size=0.1, alpha=0.1)+
+
+#Pure isotherms
+ggplot()  +  
+  geom_line(data = pure_calc, aes(x = average, y = pressure, color = db), size=1)+  
+  geom_point(data = compile_raw%>%filter(mix=='0null')%>%filter(pressure$Pressure <= 30), aes(x = area$Area, y = pressure$Pressure, color = db), size=0.1, alpha=0.1)+
+  geom_ribbon(data = pure_calc%>%filter(db=='06'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#009D00")+
+  geom_ribbon(data = pure_calc%>%filter(db=='09'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#ffc500")+
+  geom_ribbon(data = pure_calc%>%filter(db=='11'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#002289")+
+  geom_line(data = dip_calc, aes(x = average, y = pressure),color='#535353',size= 1)+
+  geom_point(data = compile_dip%>%filter(pressure$Pressure <= 30), aes(x = area$Area, y = pressure$Pressure), size=0.1, alpha=0.3,color='#535353')+
+  geom_ribbon(data = dip_calc, aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#535353")+
+  geom_point(data = compile_chol%>%filter(pressure$Pressure <= 30), aes(x = area$Area, y = pressure$Pressure), size=0.1, alpha=0.3, color = '#b7b0a3')+
+  geom_line(data = chol_calc, aes(x = average, y = pressure), color = '#b7b0a3',size= 1)+
+  xlim(35,115)+
+  ylim(0,32)+
+  labs(x="Area per molecule (Ä/mol)", y="Surface Pressure (mN/m)")+
+  theme_classic()+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289"))+
+  theme(legend.position = "none", aspect.ratio = 0.75)
+
+
+#Chol mix isotherms
+ggplot()  +  
+  geom_line(data = mix_chol_calc, aes(x = average, y = pressure, color = db), size=1)+  
+  geom_point(data = compile_raw%>%filter(mix=='chol')%>%filter(pressure$Pressure <= 30), aes(x = area$Area, y = pressure$Pressure, color = db), size=0.1, alpha=0.1)+
+  geom_ribbon(data = mix_chol_calc%>%filter(db=='06'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#009D00")+
+  geom_ribbon(data = mix_chol_calc%>%filter(db=='09'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#ffc500")+
+  geom_ribbon(data = mix_chol_calc%>%filter(db=='11'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#002289")+
+  xlim(50,90)+
+  ylim(0,32)+
+  theme_classic()+  
+  labs(title = "chol", x= "Area per Molecule (A2/mol)", y= "Surface Pressure (mN/m)")+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289"))+
+  theme(legend.position = "none", aspect.ratio = 1)
+
+
+#Dip mix isotherms
+ggplot()  +  
+  geom_line(data = mix_dip_calc, aes(x = average, y = pressure, color = db), size=1)+  
+  geom_point(data = compile_raw%>%filter(mix=='dip')%>%filter(pressure$Pressure <= 30), aes(x = area$Area, y = pressure$Pressure, color = db), size=0.1, alpha=0.1)+
+  geom_ribbon(data = mix_dip_calc%>%filter(db=='06'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#009D00")+
+  geom_ribbon(data = mix_dip_calc%>%filter(db=='09'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#ffc500")+
+  geom_ribbon(data = mix_dip_calc%>%filter(db=='11'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#002289")+
+  xlim(50,90)+
+  ylim(0,32)+
+  theme_classic()+  
+  labs(title = "Dip", x= "Area per Molecule (A2/mol)", y= "Surface Pressure (mN/m)")+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289"))+
+  theme(legend.position = "none", aspect.ratio = 1)
+
+#ggplot()  +  
+  geom_line(data = pure_calc, aes(x = average, y = pressure, color = db), size=1)+  
+  geom_ribbon(data = pure_calc%>%filter(db=='06'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#009D00")+
+  geom_ribbon(data = pure_calc%>%filter(db=='09'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#ffc500")+
+  geom_ribbon(data = pure_calc%>%filter(db=='11'), aes(y= pressure, xmin = average - stdev, xmax = average + stdev), alpha=0.3, fill= "#002289")+
+  xlim(50,90)+
+  theme_bw()+  
+  labs(title = "pure", x= "Area per Molecule (A2/mol)", y= "Surface Pressure (mN/m")+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289"))+
+  theme(aspect.ratio = 1)
+
+```
+
+```{r calculation for chol mix}
+
+#chol
+panel_2_chol <- tibble()
+panel_2_chol <- full_join(mix_chol_calc, pure_calc, by = c("db","pressure")) 
+panel_2_chol <- left_join(panel_2_chol, chol_calc, by = "pressure") 
+colnames(panel_2_chol) <- c('db', 'pressure', 'Average.Mix', 'Std.Mix', 'Average.Pure', 'Std.Pure', 'Average.Chol', 'Std.Chol')
+
+#condensation calc
+panel_2_chol <- panel_2_chol %>% mutate(condensation= 100*(1-Average.Mix/(1/3*Average.Chol+2/3*Average.Pure)) )
+panel_2_chol <- panel_2_chol %>% mutate(Std.Condensation= sqrt((-(100/(Average.Pure*2/3+Average.Chol/3))*Std.Mix)^2+(Average.Mix*200/3/(Average.Pure*2/3+Average.Chol/3)^2*Std.Pure)^2+(Average.Mix*100/3/(Average.Pure*2/3+Average.Chol/3)^2*Std.Chol)^2))
+panel_2_chol %>%mutate(m=mean(Average.Mix))
+
+#deltaG calc
+
+panel_2_chol <- panel_2_chol %>% group_by(db)%>% mutate(delta.G= (cumsum(Average.Mix)-2/3*cumsum(Average.Pure)-1/3*cumsum(Average.Chol))*6.02 )
+panel_2_chol <- panel_2_chol %>% group_by(db)%>% mutate(Std.delta.G= sqrt(4/9*(cumsum(Std.Pure)*6.02)^2+1/9*(6.02*cumsum(Std.Chol))^2))
+
+```
+
+```{r calculation for dip mix}
+#dip
+panel_2_dip <- tibble()
+panel_2_dip <- full_join(mix_dip_calc, pure_calc, by = c("db","pressure")) 
+panel_2_dip <- left_join(panel_2_dip, dip_calc, by = "pressure") 
+colnames(panel_2_dip) <- c('db', 'pressure', 'Average.Mix', 'Std.Mix', 'Average.Pure', 'Std.Pure', 'Average.Dip', 'Std.Dip')
+
+#condensation calc
+panel_2_dip <- panel_2_dip %>% mutate(condensation= 100*(1-Average.Mix/(1/3*Average.Dip+2/3*Average.Pure)) )
+panel_2_dip <- panel_2_dip %>% mutate(Std.Condensation= sqrt((-(100/(Average.Pure*2/3+Average.Dip/3))*Std.Mix)^2+(Average.Mix*200/3/(Average.Pure*2/3+Average.Dip/3)^2*Std.Pure)^2+(Average.Mix*100/3/(Average.Pure*2/3+Average.Dip/3)^2*Std.Dip)^2))
+panel_2_dip %>%mutate(m=mean(Average.Mix))
+
+#deltaG calc
+
+panel_2_dip <- panel_2_dip %>% group_by(db)%>% mutate(delta.G= (cumsum(Average.Mix)-2/3*cumsum(Average.Pure)-1/3*cumsum(Average.Dip))*6.02 )
+panel_2_dip <- panel_2_dip %>% group_by(db)%>% mutate(Std.delta.G= sqrt(4/9*6.02*cumsum(Std.Pure)^2+1/9*6.02*cumsum(Std.Dip)^2))
+
+```
+
+```{r export table}
+install.packages("writexl")
+library("writexl")
+write_xlsx(panel_2_chol,"~/Desktop/DB manuscript///230828 chol calc.xlsx")
+write_xlsx(panel_2_dip,"~/Desktop/DB manuscript///230828 dip calc.xlsx")
+```
+
+```{r Condensation plot}
+#chol
+
+#delta G chol - pressure
+ggplot(panel_2_chol%>%filter(pressure %%5 ==0)) +
+  aes(x = pressure, y = delta.G, colour = db) +
+  geom_point(shape = "circle", size = 2) +
+  geom_errorbar(aes(ymin=delta.G-Std.delta.G, ymax=delta.G+Std.delta.G), width=.2,position=position_dodge(0.05))+
+  ylim(-1500,0)+
+  labs(x="Surface pressure (mN/m)", y="∆G (J/mol)")+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289"))+
+  theme_classic()+
+  xlim(3,35)+
+  theme(legend.position = "none", aspect.ratio = 0.75)
+
+
+#dip delta G - presusre
+ggplot(panel_2_dip%>%filter(pressure %%5 ==0)) +
+  aes(x = pressure, y = delta.G, colour = db) +
+  geom_point(shape = "circle", size = 2) +
+  geom_errorbar(aes(ymin=delta.G-Std.delta.G, ymax=delta.G+Std.delta.G), width=.2,position=position_dodge(0.05))+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289")) +
+  labs(x="Surface pressure (mN/m)", y="∆G (J/mol)")+
+  theme_classic()+
+  xlim(3,35)+
+  theme(legend.position = "none", aspect.ratio = 0.75)
+
+
+#condense chol - dip plot
+colplot <- rbind(panel_2_chol %>%filter(pressure %%30 ==0)%>%mutate(type = 'chol'),panel_2_dip %>%filter(pressure %%30 ==0)%>%mutate(type = 'dip'))
+ggplot(data= colplot%>%filter(type == 'dip'),aes(x = db, y = condensation, fill = type)) +
+  geom_col(position="dodge", stat="identity", colour = 'black')+
+  geom_errorbar(aes(x=db ,ymin=condensation-Std.Condensation, ymax=condensation+Std.Condensation), width=.05, position=position_dodge(width=0.9))+
+  scale_color_manual(values = c('06'= "#009D00",'09' = "#ffc500",'11' = "#002289")) +
+  ylim(-5,13)+
+  labs(y ="Condensation effect (%)", x = NULL)+
+  coord_fixed(ratio=0.16)+
+  theme_classic()
+
+
+
+#cool color app https://coolors.co/
+```
+
+```{r Statistic effect}
+
+
+#all curve
+statt <- aov(pressure ~ db, data = panel_2_dip)
+summary(statt)
+TukeyHSD(statt)
+
+#or unpaired t-test @graphpad
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
