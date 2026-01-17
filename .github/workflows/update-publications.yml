@@ -1,0 +1,37 @@
+name: Update publications from ORCID
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Monthly on the 1st at 06:15 UTC
+    - cron: "15 6 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch ORCID works and write _data/publications.json
+        run: python scripts/orcid_sync_publications.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "saenz-lab-bot"
+          git config user.email "saenz-lab-bot@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git add _data/publications.json
+          git commit -m "Update publications from ORCID"
+          git push
