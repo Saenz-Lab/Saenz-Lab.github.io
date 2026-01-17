@@ -1,5 +1,790 @@
 {
   "orcid": "0000-0001-8901-4377",
-  "generated_at": null,
-  "items": []
+  "generated_at": "2026-01-17T20:24:59Z",
+  "items": [
+    {
+      "title": "The secret life of RNA and lipids",
+      "year": 2025,
+      "journal": "RNA Biology",
+      "type": "journal-article",
+      "doi": "10.1080/15476286.2025.2526903",
+      "link": "https://doi.org/10.1080/15476286.2025.2526903"
+    },
+    {
+      "title": "Metabolic heat flow from the minimal cell JCVI-Syn3B reveals the lipidome-dependence of growth and metabolism",
+      "year": 2025,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2025.09.12.675810",
+      "link": "https://doi.org/10.1101/2025.09.12.675810"
+    },
+    {
+      "title": "Effects of lipid membranes on RNA catalytic activity and stability",
+      "year": 2025,
+      "journal": "Biology of the Cell",
+      "type": "journal-article",
+      "doi": "10.1111/boc.202400115",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/effects-of-lipid-membranes-on-rna-catalytic-activity-and-stability(0a320f0b-37cc-418f-8c99-fdee5b103dba).html"
+    },
+    {
+      "title": "Effects of lipid membranes on RNA catalytic activity and stability",
+      "year": 2025,
+      "journal": "Biology of the Cell",
+      "type": "journal-article",
+      "doi": "10.1111/boc.202400115",
+      "link": "https://doi.org/10.1111/boc.202400115"
+    },
+    {
+      "title": "A roadmap toward the synthesis of life",
+      "year": 2025,
+      "journal": "Chem",
+      "type": "review",
+      "doi": "10.1016/j.chempr.2024.102399",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/a-roadmap-toward-the-synthesis-of-life(33d6101f-b2e4-47cd-921b-90ee40bd4ddb).html"
+    },
+    {
+      "title": "A novel expression system for imaging single-molecule fluorescence in Haloferax volcanii WR806 enables visualization of Cas1 involvement in UV-light associated DNA repair",
+      "year": 2025,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2025.02.24.639823",
+      "link": "https://doi.org/10.1101/2025.02.24.639823"
+    },
+    {
+      "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
+      "year": 2024,
+      "journal": "Biophysical journal",
+      "type": "journal-article",
+      "doi": "10.1016/j.bpj.2024.06.002",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/varying-the-position-of-phospholipid-acyl-chain-unsaturation-modulates-hopanoid-and-sterol-ordering(3497ad5a-5007-46fb-beb4-cb33b3d8b8c8).html"
+    },
+    {
+      "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
+      "year": 2024,
+      "journal": "Biophysical Journal",
+      "type": "journal-article",
+      "doi": "10.1016/j.bpj.2024.06.002",
+      "link": "https://doi.org/10.1016/j.bpj.2024.06.002"
+    },
+    {
+      "title": "Temperature change elicits lipidome adaptation in the simple organisms Mycoplasma mycoides and JCVI-syn3B",
+      "year": 2024,
+      "journal": "Cell reports",
+      "type": "journal-article",
+      "doi": "10.1016/j.celrep.2024.114435",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/temperature-change-elicits-lipidome-adaptation-in-the-simple-organisms-mycoplasma-mycoides-and-jcvisyn3b(9f3e25c8-ac5a-417a-ae16-b6e1eb8b6695).html"
+    },
+    {
+      "title": "Temperature change elicits lipidome adaptation in the simple organisms Mycoplasma mycoides and JCVI-syn3B",
+      "year": 2024,
+      "journal": "Cell Reports",
+      "type": "journal-article",
+      "doi": "10.1016/j.celrep.2024.114435",
+      "link": "https://doi.org/10.1016/j.celrep.2024.114435"
+    },
+    {
+      "title": "MemPrep, a new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
+      "year": 2024,
+      "journal": "The EMBO journal",
+      "type": "journal-article",
+      "doi": "10.1038/s44318-024-00063-y",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/memprep-a-new-technology-for-isolating-organellar-membranes-provides-fingerprints-of-lipid-bilayer-stress(0467f0c4-1496-459b-8877-6848db41af22).html"
+    },
+    {
+      "title": "MemPrep, a new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
+      "year": 2024,
+      "journal": "EMBO Journal",
+      "type": "journal-article",
+      "doi": "10.1038/s44318-024-00063-y",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85187935349&partnerID=MN8TOARS"
+    },
+    {
+      "title": "MemPrep, a new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
+      "year": 2024,
+      "journal": "The EMBO Journal",
+      "type": "journal-article",
+      "doi": "10.1038/s44318-024-00063-y",
+      "link": "https://doi.org/10.1038/s44318-024-00063-y"
+    },
+    {
+      "title": "Effects of lipid membranes on RNA catalytic activity and stability",
+      "year": 2024,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2024.08.31.610601",
+      "link": "https://doi.org/10.1101/2024.08.31.610601"
+    },
+    {
+      "title": "Chemically defined lipid diets reveal the versatility of lipidome remodeling in genomically minimal cells",
+      "year": 2024,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2024.10.04.616688",
+      "link": "https://doi.org/10.1101/2024.10.04.616688"
+    },
+    {
+      "title": "A tuneable minimal cell membrane reveals that two lipid species suffice for life",
+      "year": 2024,
+      "journal": "Nature communications",
+      "type": "journal-article",
+      "doi": "10.1038/s41467-024-53975-y",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/a-tuneable-minimal-cell-membrane-reveals-that-two-lipid-species-suffice-for-life(1f163c23-1a5e-4a36-934e-8ad58132c4b5).html"
+    },
+    {
+      "title": "A tuneable minimal cell membrane reveals that two lipid species suffice for life",
+      "year": 2024,
+      "journal": "Nature Communications",
+      "type": "journal-article",
+      "doi": "10.1038/s41467-024-53975-y",
+      "link": "https://doi.org/10.1038/s41467-024-53975-y"
+    },
+    {
+      "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
+      "year": 2023,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2023.09.06.556521",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85188621978&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
+      "year": 2023,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2023.09.06.556521",
+      "link": "https://doi.org/10.1101/2023.09.06.556521"
+    },
+    {
+      "title": "Impact of cholesterol and Lumacaftor on the folding of CFTR helical hairpins",
+      "year": 2023,
+      "journal": "Biochimica et Biophysica Acta - Biomembranes",
+      "type": "journal-article",
+      "doi": "10.1016/j.bbamem.2022.184078",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85140442365&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Impact of cholesterol and Lumacaftor on the folding of CFTR helical hairpins",
+      "year": 2023,
+      "journal": "Biochimica et biophysica acta : BBA",
+      "type": "journal-article",
+      "doi": "10.1016/j.bbamem.2022.184078",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/impact-of-cholesterol-and-lumacaftor-on-the-folding-of-cftr-helical-hairpins(bfb3cd91-2042-4381-949c-749b6998fa81).html"
+    },
+    {
+      "title": "From hot to cold: dissecting lipidome adaptation inMycoplasma mycoidesand the Minimal Cell JCVI-Syn3B",
+      "year": 2023,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2023.11.10.566608",
+      "link": "https://doi.org/10.1101/2023.11.10.566608"
+    },
+    {
+      "title": "From hot to cold: Dissecting lipidome adaptation in Mycoplasma mycoides and the Minimal Cell JCVI-Syn3B",
+      "year": 2023,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2023.11.10.566608",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85180146220&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Expanding Knowledge of Methylotrophic Capacity: Structure and Properties of the Rough-Type Lipopolysaccharide from Methylobacterium extorquens and Its Role on Membrane Resistance to Methanol",
+      "year": 2023,
+      "journal": "JACS Au",
+      "type": "journal-article",
+      "doi": "10.1021/jacsau.3c00025",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85149892359&partnerID=MN8TOARS"
+    },
+    {
+      "title": "A tuneable minimal cell membrane reveals that two lipids suffice for life",
+      "year": 2023,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2023.10.24.563757",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85180562240&partnerID=MN8TOARS"
+    },
+    {
+      "title": "A tuneable minimal cell membrane reveals that two lipid species suffice for life",
+      "year": 2023,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2023.10.24.563757",
+      "link": "https://doi.org/10.1101/2023.10.24.563757"
+    },
+    {
+      "title": "A self-assembled dynamic extracellular matrix-like hydrogel system with multi-scale structures for cell bioengineering applications",
+      "year": 2023,
+      "journal": "Acta Biomaterialia",
+      "type": "journal-article",
+      "doi": "10.1016/j.actbio.2023.03.015",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85151415135&partnerID=MN8TOARS"
+    },
+    {
+      "title": "A self-assembled dynamic extracellular matrix-like hydrogel system with multi-scale structures for cell bioengineering applications",
+      "year": 2023,
+      "journal": "Acta biomaterialia",
+      "type": "journal-article",
+      "doi": "10.1016/j.actbio.2023.03.015",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/a-selfassembled-dynamic-extracellular-matrixlike-hydrogel-system-with-multiscale-structures-for-cell-bioengineering-applications(7301dff6-c81f-4968-afba-eb30ab1bea6d).html"
+    },
+    {
+      "title": "Role of EPS in mitigation of plant abiotic stress: The case of Methylobacterium extorquens PA1",
+      "year": 2022,
+      "journal": "Carbohydrate Polymers",
+      "type": "journal-article",
+      "doi": "10.1016/j.carbpol.2022.119863",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85134534124&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Role of EPS in mitigation of plant abiotic stress: The case of Methylobacterium extorquens PA1",
+      "year": 2022,
+      "journal": "Carbohydrate polymers",
+      "type": "journal-article",
+      "doi": "10.1016/j.carbpol.2022.119863",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/role-of-eps-in-mitigation-of-plant-abiotic-stress(4b1c65b5-b38a-4945-8ef5-67186b16fd79).html"
+    },
+    {
+      "title": "Prebiotic Foam Environments to Oligomerize and Accumulate RNA",
+      "year": 2022,
+      "journal": "ChemBioChem",
+      "type": "journal-article",
+      "doi": "10.1002/cbic.202200423",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85142272610&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Prebiotic Foam Environments to Oligomerize and Accumulate RNA",
+      "year": 2022,
+      "journal": "ChemBioChem",
+      "type": "journal-article",
+      "doi": "10.1002/cbic.202200423",
+      "link": "https://doi.org/10.1002/cbic.202200423"
+    },
+    {
+      "title": "Lipid membranes modulate the activity of RNA through sequence-dependent interactions",
+      "year": 2022,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.2119235119",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85123101242&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Lipid membranes modulate the activity of RNA through sequence-dependent interactions",
+      "year": 2022,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.2119235119",
+      "link": "https://doi.org/10.1073/pnas.2119235119"
+    },
+    {
+      "title": "Hopanoids Confer Robustness to Physicochemical Variability in the Niche of the Plant Symbiont Bradyrhizobium diazoefficiens",
+      "year": 2022,
+      "journal": "Journal of Bacteriology",
+      "type": "journal-article",
+      "doi": "10.1128/jb.00442-21",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85134412209&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Hopanoids Confer Robustness to Physicochemical Variability in the Niche of the Plant Symbiont Bradyrhizobium diazoefficiens",
+      "year": 2022,
+      "journal": "Journal of Bacteriology",
+      "type": "journal-article",
+      "doi": "10.1128/jb.00442-21",
+      "link": "https://doi.org/10.1128/jb.00442-21"
+    },
+    {
+      "title": "Fundamental behaviors emerge from simulations of a living minimal cell",
+      "year": 2022,
+      "journal": "Cell",
+      "type": "journal-article",
+      "doi": "10.1016/j.cell.2021.12.025",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85123004712&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Fundamental behaviors emerge from simulations of a living minimal cell",
+      "year": 2022,
+      "journal": "Cell",
+      "type": "journal-article",
+      "doi": "10.1016/j.cell.2021.12.025",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/fundamental-behaviors-emerge-from-simulations-of-a-living-minimal-cell(db84b850-7933-4489-83ba-0161fc72e968).html"
+    },
+    {
+      "title": "A new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
+      "year": 2022,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2022.09.15.508072",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85140375864&partnerID=MN8TOARS"
+    },
+    {
+      "title": "A new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
+      "year": 2022,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2022.09.15.508072",
+      "link": "https://doi.org/10.1101/2022.09.15.508072"
+    },
+    {
+      "title": "The role of hopanoids in fortifying rhizobia against a changing climate",
+      "year": 2021,
+      "journal": "Environmental Microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/1462-2920.15594",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85106607363&partnerID=MN8TOARS"
+    },
+    {
+      "title": "The role of hopanoids in fortifying rhizobia against a changing climate",
+      "year": 2021,
+      "journal": "Environmental Microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/1462-2920.15594",
+      "link": "http://dx.doi.org/10.1111/1462-2920.15594"
+    },
+    {
+      "title": "Lipid membranes modulate the activity of RNA through sequence-dependent interactions",
+      "year": 2021,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2021.03.25.437010",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85119306868&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Lipid membranes modulate the activity of RNA through sequence-dependent interactions",
+      "year": 2021,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2021.03.25.437010",
+      "link": "https://doi.org/10.1101/2021.03.25.437010"
+    },
+    {
+      "title": "Hopanoids confer robustness to physicochemical variability in the niche of the plant symbiont Bradyrhizobium diazoefficiens",
+      "year": 2021,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2021.08.31.458470",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85117995984&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Hopanoids confer robustness to physicochemical variability in the niche of the plant symbiont Bradyrhizobium diazoefficiens",
+      "year": 2021,
+      "journal": "",
+      "type": "other",
+      "doi": "10.1101/2021.08.31.458470",
+      "link": "https://doi.org/10.1101/2021.08.31.458470"
+    },
+    {
+      "title": "Functional diversity of isoprenoid lipids in Methylobacterium extorquens PA1",
+      "year": 2021,
+      "journal": "Molecular Microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/mmi.14794",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85113418750&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Functional diversity of isoprenoid lipids in Methylobacterium extorquens PA1",
+      "year": 2021,
+      "journal": "Molecular Microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/mmi.14794",
+      "link": "https://doi.org/10.1111/mmi.14794"
+    },
+    {
+      "title": "Effect of viscosity on microswimmers: a comparative study",
+      "year": 2021,
+      "journal": "ChemNanoMat",
+      "type": "journal-article",
+      "doi": "10.1002/cnma.202100119",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/effect-of-viscosity-on-microswimmers(bd2d9abc-f352-4c14-928f-98a518365029).html"
+    },
+    {
+      "title": "Effect of viscosity on microswimmers: a comparative study",
+      "year": 2021,
+      "journal": "ChemNanoMat",
+      "type": "journal-article",
+      "doi": "10.1002/cnma.202100119",
+      "link": "http://dx.doi.org/10.1002/cnma.202100119"
+    },
+    {
+      "title": "Effect of Viscosity on Microswimmers: A Comparative Study",
+      "year": 2021,
+      "journal": "ChemNanoMat",
+      "type": "journal-article",
+      "doi": "10.1002/cnma.202100119",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85106313786&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Principles of Membrane Adaptation Revealed through Environmentally Induced Bacterial Lipidome Remodeling",
+      "year": 2020,
+      "journal": "Cell Reports",
+      "type": "journal-article",
+      "doi": "10.1016/j.celrep.2020.108165",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85091231161&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Principles of Membrane Adaptation Revealed through Environmentally Induced Bacterial Lipidome Remodeling",
+      "year": 2020,
+      "journal": "Cell Reports",
+      "type": "journal-article",
+      "doi": "10.1016/j.celrep.2020.108165",
+      "link": "https://doi.org/10.1016/j.celrep.2020.108165"
+    },
+    {
+      "title": "Functional diversity of isoprenoidal lipids inMethylobacterium extorquensPA1",
+      "year": 2020,
+      "journal": "",
+      "type": "preprint",
+      "doi": "10.1101/2020.12.21.423902",
+      "link": "https://doi.org/10.1101/2020.12.21.423902"
+    },
+    {
+      "title": "Functional diversity of isoprenoidal lipids in Methylobacterium extorquens PA1",
+      "year": 2020,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/2020.12.21.423902",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85100655761&partnerID=MN8TOARS"
+    },
+    {
+      "title": "A Method for High‐Throughput Measurements of Viscosity in Sub‐micrometer‐Sized Membrane Systems",
+      "year": 2020,
+      "journal": "ChemBioChem",
+      "type": "journal-article",
+      "doi": "10.1002/cbic.201900510",
+      "link": "https://doi.org/10.1002/cbic.201900510"
+    },
+    {
+      "title": "A Method for High-Throughput Measurements of Viscosity in Sub-micrometer-Sized Membrane Systems",
+      "year": 2020,
+      "journal": "ChemBioChem",
+      "type": "journal-article",
+      "doi": "10.1002/cbic.201900510",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85076217016&partnerID=MN8TOARS"
+    },
+    {
+      "title": "New method for high-throughput measurements of viscosity in submicrometer-sized membrane systems",
+      "year": 2019,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/736785",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85093552469&partnerID=MN8TOARS"
+    },
+    {
+      "title": "New method for high-throughput measurements of viscosity in submicrometer-sized membrane systems",
+      "year": 2019,
+      "journal": "",
+      "type": "other",
+      "doi": "10.1101/736785",
+      "link": "https://doi.org/10.1101/736785"
+    },
+    {
+      "title": "Environmentally induced lipidome adaptation in the bacterial model organism M. extorquens",
+      "year": 2019,
+      "journal": "bioRxiv",
+      "type": "other",
+      "doi": "10.1101/650390",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85093547821&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Environmentally induced lipidome adaptation in the bacterial model organism M. extorquens",
+      "year": 2019,
+      "journal": "",
+      "type": "other",
+      "doi": "10.1101/650390",
+      "link": "https://doi.org/10.1101/650390"
+    },
+    {
+      "title": "Environmentally Induced Lipidome Adaptation in the Bacterial Model Organism M. extorquens",
+      "year": 2019,
+      "journal": "SSRN",
+      "type": "other",
+      "doi": "10.2139/ssrn.3426155",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85110838533&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Hopanoids as functional analogues of cholesterol in bacterial membranes.",
+      "year": 2015,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.1515607112",
+      "link": "http://europepmc.org/abstract/med/26351677"
+    },
+    {
+      "title": "Hopanoids as functional analogues of cholesterol in bacterial membranes",
+      "year": 2015,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.1515607112",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84942908911&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Hopanoids as functional analogues of cholesterol in bacterial membranes",
+      "year": 2015,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America : PNAS",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.1515607112",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/hopanoids-as-functional-analogues-of-cholesterol-in-bacterial-membranes(23d68e86-61be-494a-8a22-1b5d830344be).html"
+    },
+    {
+      "title": "Homeostatic control of biological membranes by dedicated lipid and membrane packing sensors.",
+      "year": 2015,
+      "journal": "Biological chemistry",
+      "type": "journal-article",
+      "doi": "10.1515/hsz-2015-0130",
+      "link": "http://europepmc.org/abstract/med/25849795"
+    },
+    {
+      "title": "Homeostatic control of biological membranes by dedicated lipid and membrane packing sensors",
+      "year": 2015,
+      "journal": "Biological Chemistry",
+      "type": "journal-article",
+      "doi": "10.1515/hsz-2015-0130",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938932061&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Homeostatic control of biological membranes by dedicated lipid and membrane packing sensors",
+      "year": 2015,
+      "journal": "Biological chemistry",
+      "type": "review",
+      "doi": "10.1515/hsz-2015-0130",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/homeostatic-control-of-biological-membranes-by-dedicated-lipid-and-membrane-packing-sensors(1703380f-1c28-47ad-a287-5f791bc71bbb).html"
+    },
+    {
+      "title": "Crosstalk of lipid and protein homeostasis to maintain membrane function.",
+      "year": 2014,
+      "journal": "Biological chemistry",
+      "type": "journal-article",
+      "doi": "10.1515/hsz-2013-0235",
+      "link": "http://europepmc.org/abstract/med/24152902"
+    },
+    {
+      "title": "Crosstalk of lipid and protein homeostasis to maintain membrane function",
+      "year": 2014,
+      "journal": "Biological Chemistry",
+      "type": "journal-article",
+      "doi": "10.1515/hsz-2013-0235",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84922395053&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Crosstalk of lipid and protein homeostasis to maintain membrane function",
+      "year": 2014,
+      "journal": "Biological chemistry",
+      "type": "review",
+      "doi": "10.1515/hsz-2013-0235",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/crosstalk-of-lipid-and-protein-homeostasis-to-maintain-membrane-function(618660a6-1de5-4d4f-80ee-28a30f00da07).html"
+    },
+    {
+      "title": "Hopanoids in marine cyanobacteria: probing their phylogenetic distribution and biological role.",
+      "year": 2012,
+      "journal": "Geobiology",
+      "type": "journal-article",
+      "doi": "10.1111/j.1472-4669.2012.00318.x",
+      "link": "http://europepmc.org/abstract/med/22329628"
+    },
+    {
+      "title": "Hopanoids in marine cyanobacteria: Probing their phylogenetic distribution and biological role",
+      "year": 2012,
+      "journal": "Geobiology",
+      "type": "journal-article",
+      "doi": "10.1111/j.1472-4669.2012.00318.x",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84862194728&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Functional convergence of hopanoids and sterols in membrane ordering.",
+      "year": 2012,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.1212141109",
+      "link": "http://europepmc.org/abstract/med/22893685"
+    },
+    {
+      "title": "Functional convergence of hopanoids and sterols in membrane ordering",
+      "year": 2012,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.1212141109",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84865532003&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Functional convergence of hopanoids and sterols in membrane ordering",
+      "year": 2012,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America : PNAS",
+      "type": "journal-article",
+      "doi": "10.1073/pnas.1212141109",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/functional-convergence-of-hopanoids-and-sterols-in-membrane-ordering(5ba4790b-5af4-48c2-89a9-096706f311dd).html"
+    },
+    {
+      "title": "Distribution of anaerobic ammonia-oxidizing bacteria in a subterranean estuary",
+      "year": 2012,
+      "journal": "Marine Chemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.marchem.2012.04.004",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84861557790&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Distribution of anaerobic ammonia-oxidizing bacteria in a subterranean estuary",
+      "year": 2012,
+      "journal": "Marine Chemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.marchem.2012.04.004",
+      "link": "https://doi.org/10.1016/j.marchem.2012.04.004"
+    },
+    {
+      "title": "Biomarkers, chemistry and microbiology show chemoautotrophy in a multilayer chemocline in the Cariaco Basin",
+      "year": 2012,
+      "journal": "Deep-Sea Research Part I: Oceanographic Research Papers",
+      "type": "journal-article",
+      "doi": "10.1016/j.dsr.2012.01.005",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84862820728&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Biomarkers, chemistry and microbiology show chemoautotrophy in a multilayer chemocline in the Cariaco Basin",
+      "year": 2012,
+      "journal": "Deep Sea Research Part I: Oceanographic Research Papers",
+      "type": "journal-article",
+      "doi": "10.1016/j.dsr.2012.01.005",
+      "link": "https://doi.org/10.1016/j.dsr.2012.01.005"
+    },
+    {
+      "title": "New constraints on the provenance of hopanoids in the marine geologic record: Bacteriohopanepolyols in marine suboxic and anoxic environments",
+      "year": 2011,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2011.08.016",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-80855130543&partnerID=MN8TOARS"
+    },
+    {
+      "title": "New constraints on the provenance of hopanoids in the marine geologic record: Bacteriohopanepolyols in marine suboxic and anoxic environments",
+      "year": 2011,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2011.08.016",
+      "link": "https://doi.org/10.1016/j.orggeochem.2011.08.016"
+    },
+    {
+      "title": "Abundance and structural diversity of bacteriohopanepolyols in suspended particulate matter along a river to ocean transect",
+      "year": 2011,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2011.05.006",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-79960927427&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Abundance and structural diversity of bacteriohopanepolyols in suspended particulate matter along a river to ocean transect",
+      "year": 2011,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2011.05.006",
+      "link": "https://doi.org/10.1016/j.orggeochem.2011.05.006"
+    },
+    {
+      "title": "Hopanoid enrichment in a detergent resistant membrane fraction of Crocosphaera watsonii: Implications for bacterial lipid raft formation",
+      "year": 2010,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2010.05.005",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-77954312065&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Hopanoid enrichment in a detergent resistant membrane fraction of Crocosphaera watsonii: Implications for bacterial lipid raft formation",
+      "year": 2010,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2010.05.005",
+      "link": "https://doi.org/10.1016/j.orggeochem.2010.05.005"
+    },
+    {
+      "title": "Exploring the distribution and physiological roles of bacterial membrane lipids in the marine environment",
+      "year": 2010,
+      "journal": "",
+      "type": "book",
+      "doi": "10.1575/1912/4081",
+      "link": "https://doi.org/10.1575/1912/4081"
+    },
+    {
+      "title": "Adenosylhopane: The first intermediate in hopanoid side chain biosynthesis",
+      "year": 2010,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2010.07.003",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-77956484266&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Adenosylhopane: The first intermediate in hopanoid side chain biosynthesis",
+      "year": 2010,
+      "journal": "Organic Geochemistry",
+      "type": "journal-article",
+      "doi": "10.1016/j.orggeochem.2010.07.003",
+      "link": "https://doi.org/10.1016/j.orggeochem.2010.07.003"
+    },
+    {
+      "title": "Diversity of hopanoids and squalene-hopene cyclases across a tropical land-sea gradient.",
+      "year": 2009,
+      "journal": "Environmental microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/j.1462-2920.2008.01817.x",
+      "link": "http://europepmc.org/abstract/med/19128318"
+    },
+    {
+      "title": "Diversity of hopanoids and squalene-hopene cyclases across a tropical land-sea gradient",
+      "year": 2009,
+      "journal": "Environmental Microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/j.1462-2920.2008.01817.x",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-65349189508&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Diversity of hopanoids and squalene-hopene cyclases across a tropical land-sea gradient",
+      "year": 2009,
+      "journal": "Environmental microbiology",
+      "type": "journal-article",
+      "doi": "10.1111/j.1462-2920.2008.01817.x",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/diversity-of-hopanoids-and-squalenehopene-cyclases-across-a-tropical-landsea-gradient(1fd66043-b7cf-4be3-9179-e7cd93df284f).html"
+    },
+    {
+      "title": "DNA and lipid molecular stratigraphic records of haptophyte succession in the Black Sea during the Holocene",
+      "year": 2009,
+      "journal": "Earth and Planetary Science Letters",
+      "type": "journal-article",
+      "doi": "10.1016/j.epsl.2009.05.029",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-67650564433&partnerID=MN8TOARS"
+    },
+    {
+      "title": "DNA and lipid molecular stratigraphic records of haptophyte succession in the Black Sea during the Holocene",
+      "year": 2009,
+      "journal": "Earth and Planetary Science Letters",
+      "type": "journal-article",
+      "doi": "10.1016/j.epsl.2009.05.029",
+      "link": "https://doi.org/10.1016/j.epsl.2009.05.029"
+    },
+    {
+      "title": "Permeabilities of teleost and elasmobranch gill apical membranes: evidence that lipid bilayers alone do not account for barrier function.",
+      "year": 2004,
+      "journal": "American journal of physiology. Cell physiology",
+      "type": "journal-article",
+      "doi": "10.1152/ajpcell.00017.2004",
+      "link": "http://europepmc.org/abstract/med/14998788"
+    },
+    {
+      "title": "Permeabilities of teleost and elasmobranch gill apical membranes: evidence that lipid bilayers alone do not account for barrier function",
+      "year": 2004,
+      "journal": "American journal of physiology / publ. by the American Physiological Society",
+      "type": "journal-article",
+      "doi": "10.1152/ajpcell.00017.2004",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/permeabilities-of-teleost-and-elasmobranch-gill-apical-membranes(81cdd92b-c225-4f6b-bc73-caea42b5da9a).html"
+    },
+    {
+      "title": "Permeabilities of teleost and elasmobranch gill apical membranes: Evidence that lipid bilayers alone do not account for barrier function",
+      "year": 2004,
+      "journal": "American Journal of Physiology - Cell Physiology",
+      "type": "journal-article",
+      "doi": "10.1152/ajpcell.00017.2004",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-2942685903&partnerID=MN8TOARS"
+    },
+    {
+      "title": "Water and solute permeabilities of flounder and shark gill apical membrane vesicles",
+      "year": 2003,
+      "journal": "FASEB JOURNAL",
+      "type": "conference-paper",
+      "doi": null,
+      "link": ""
+    }
+  ]
 }
