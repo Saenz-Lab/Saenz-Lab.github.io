@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0001-8901-4377",
-  "generated_at": "2026-01-17T20:36:48Z",
+  "generated_at": "2026-01-17T20:45:21Z",
   "items": [
     {
       "title": "The secret life of RNA and lipids",
@@ -67,14 +67,6 @@
       "link": "https://fis.tu-dresden.de/portal/en/publications/memprep-a-new-technology-for-isolating-organellar-membranes-provides-fingerprints-of-lipid-bilayer-stress(0467f0c4-1496-459b-8877-6848db41af22).html"
     },
     {
-      "title": "Effects of lipid membranes on RNA catalytic activity and stability",
-      "year": 2024,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2024.08.31.610601",
-      "link": "https://doi.org/10.1101/2024.08.31.610601"
-    },
-    {
       "title": "Chemically defined lipid diets reveal the versatility of lipidome remodeling in genomically minimal cells",
       "year": 2024,
       "journal": "",
@@ -91,14 +83,6 @@
       "link": "https://doi.org/10.1038/s41467-024-53975-y"
     },
     {
-      "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
-      "year": 2023,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2023.09.06.556521",
-      "link": "https://doi.org/10.1101/2023.09.06.556521"
-    },
-    {
       "title": "Impact of cholesterol and Lumacaftor on the folding of CFTR helical hairpins",
       "year": 2023,
       "journal": "Biochimica et biophysica acta : BBA",
@@ -107,28 +91,12 @@
       "link": "https://fis.tu-dresden.de/portal/en/publications/impact-of-cholesterol-and-lumacaftor-on-the-folding-of-cftr-helical-hairpins(bfb3cd91-2042-4381-949c-749b6998fa81).html"
     },
     {
-      "title": "From hot to cold: dissecting lipidome adaptation inMycoplasma mycoidesand the Minimal Cell JCVI-Syn3B",
-      "year": 2023,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2023.11.10.566608",
-      "link": "https://doi.org/10.1101/2023.11.10.566608"
-    },
-    {
       "title": "Expanding Knowledge of Methylotrophic Capacity: Structure and Properties of the Rough-Type Lipopolysaccharide from Methylobacterium extorquens and Its Role on Membrane Resistance to Methanol",
       "year": 2023,
       "journal": "JACS Au",
       "type": "journal-article",
       "doi": "10.1021/jacsau.3c00025",
       "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85149892359&partnerID=MN8TOARS"
-    },
-    {
-      "title": "A tuneable minimal cell membrane reveals that two lipid species suffice for life",
-      "year": 2023,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2023.10.24.563757",
-      "link": "https://doi.org/10.1101/2023.10.24.563757"
     },
     {
       "title": "A self-assembled dynamic extracellular matrix-like hydrogel system with multi-scale structures for cell bioengineering applications",
@@ -179,28 +147,12 @@
       "link": "https://fis.tu-dresden.de/portal/en/publications/fundamental-behaviors-emerge-from-simulations-of-a-living-minimal-cell(db84b850-7933-4489-83ba-0161fc72e968).html"
     },
     {
-      "title": "A new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
-      "year": 2022,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2022.09.15.508072",
-      "link": "https://doi.org/10.1101/2022.09.15.508072"
-    },
-    {
       "title": "The role of hopanoids in fortifying rhizobia against a changing climate",
       "year": 2021,
       "journal": "Environmental Microbiology",
       "type": "journal-article",
       "doi": "10.1111/1462-2920.15594",
       "link": "http://dx.doi.org/10.1111/1462-2920.15594"
-    },
-    {
-      "title": "Lipid membranes modulate the activity of RNA through sequence-dependent interactions",
-      "year": 2021,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2021.03.25.437010",
-      "link": "https://doi.org/10.1101/2021.03.25.437010"
     },
     {
       "title": "Hopanoids confer robustness to physicochemical variability in the niche of the plant symbiont Bradyrhizobium diazoefficiens",
@@ -235,14 +187,6 @@
       "link": "https://doi.org/10.1016/j.celrep.2020.108165"
     },
     {
-      "title": "Functional diversity of isoprenoidal lipids inMethylobacterium extorquensPA1",
-      "year": 2020,
-      "journal": "",
-      "type": "preprint",
-      "doi": "10.1101/2020.12.21.423902",
-      "link": "https://doi.org/10.1101/2020.12.21.423902"
-    },
-    {
       "title": "A Method for High‐Throughput Measurements of Viscosity in Sub‐micrometer‐Sized Membrane Systems",
       "year": 2020,
       "journal": "ChemBioChem",
@@ -251,36 +195,12 @@
       "link": "https://doi.org/10.1002/cbic.201900510"
     },
     {
-      "title": "New method for high-throughput measurements of viscosity in submicrometer-sized membrane systems",
-      "year": 2019,
-      "journal": "",
-      "type": "other",
-      "doi": "10.1101/736785",
-      "link": "https://doi.org/10.1101/736785"
-    },
-    {
-      "title": "Environmentally induced lipidome adaptation in the bacterial model organism M. extorquens",
-      "year": 2019,
-      "journal": "bioRxiv",
-      "type": "other",
-      "doi": "10.1101/650390",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85093547821&partnerID=MN8TOARS"
-    },
-    {
       "title": "Environmentally induced lipidome adaptation in the bacterial model organism M. extorquens",
       "year": 2019,
       "journal": "",
       "type": "other",
       "doi": "10.1101/650390",
       "link": "https://doi.org/10.1101/650390"
-    },
-    {
-      "title": "Environmentally Induced Lipidome Adaptation in the Bacterial Model Organism M. extorquens",
-      "year": 2019,
-      "journal": "SSRN",
-      "type": "other",
-      "doi": "10.2139/ssrn.3426155",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85110838533&partnerID=MN8TOARS"
     },
     {
       "title": "Hopanoids as functional analogues of cholesterol in bacterial membranes.",
