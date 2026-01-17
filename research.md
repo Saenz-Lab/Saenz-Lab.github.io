@@ -1,40 +1,71 @@
 ---
 title: Research
-subtitle: Experimental and conceptual directions
+subtitle: Research programs and experimental approaches
 layout: page
 ---
+
+<p>
+The Saenz Lab investigates how lipid membranes give rise to physical phenotypes that shape
+cellular function, how these phenotypes are regulated, and how they can be experimentally
+reconstructed and engineered. Our work integrates quantitative lipidomics, membrane
+biophysics, minimal cell biology, and synthetic genomics.
+</p>
 
 <div class="grid">
 
   <div class="card half">
-    <h2>Minimal membranes and cellular viability</h2>
+    <h2>Membrane composition and physical state</h2>
     <p>
-      We use genomically minimal bacteria as experimental platforms to investigate how much
-      membrane complexity is required to sustain life. By reducing lipid diversity to
-      defined sets and rebuilding it systematically, we study how membrane composition
-      constrains viability, robustness, and adaptation.
+      Lipid composition strongly influences membrane physical properties such as order,
+      permeability, and mechanical stability. We study how specific lipid structures and
+      lipidome compositions give rise to distinct membrane phenotypes, and how these
+      phenotypes adapt to environmental perturbations.
     </p>
     <p class="meta">
-      This work combines chemically defined lipid supplementation, lipidomics, and
-      biophysical readouts in minimal cells.
+      This work combines lipidomics, chemically defined lipid diets, and biophysical
+      measurements to link molecular composition to membrane function.
     </p>
   </div>
 
   <div class="card half">
-    <h2>Lipidome remodeling and membrane adaptation</h2>
+    <h2>Minimal and synthetic membranes</h2>
     <p>
-      Cells adjust membrane composition in response to temperature and other perturbations.
-      We investigate how lipidome remodeling tunes membrane physical properties, and how
-      these adjustments are regulated and constrained by cellular metabolism.
+      Genomically minimal cells provide a uniquely reduced background for studying membrane
+      function. By systematically simplifying and rebuilding membrane composition, we
+      investigate how much lipid complexity is required for cellular viability, robustness,
+      and adaptation.
     </p>
     <p class="meta">
-      A central focus is the relationship between lipid structure, membrane order, and
-      functional robustness.
+      Minimal cells serve as experimental testbeds for identifying membrane design
+      principles that are difficult to access in more complex organisms.
     </p>
   </div>
 
   <div class="card half">
-    <h2>Hopanoids, sterols, and membrane ordering</h2>
+    <h2>Regulation and homeostasis of membrane phenotypes</h2>
     <p>
-      Hopanoids and sterols are chemically distinct lipids that play related roles in
-      membrane ordering across domains of life. We study how these
+      Cells must sense and regulate membrane physical state to maintain function under
+      changing conditions. We investigate how membrane properties are coupled to lipid
+      synthesis and regulation, and how these control mechanisms can be refactored or
+      re-engineered.
+    </p>
+    <p class="meta">
+      A long-term goal is to place membrane physical properties under synthetic control,
+      enabling programmable membrane homeostasis.
+    </p>
+  </div>
+
+  <div class="card half">
+    <h2>RNA–lipid interactions at membrane interfaces</h2>
+    <p>
+      RNA can interact directly with lipid membranes, with consequences for RNA structure,
+      catalytic activity, and stability. We study how membrane composition and physical state
+      modulate RNA behavior at membrane interfaces.
+    </p>
+    <p class="meta">
+      These interactions suggest new modes of membrane-sensitive regulation and provide a
+      physical link between lipid composition and RNA function.
+    </p>
+  </div>
+
+</div>
