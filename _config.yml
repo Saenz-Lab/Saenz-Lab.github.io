@@ -1,0 +1,21 @@
+title: Saenz Lab
+description: Membrane biophysics, lipidomics, and synthetic cells.
+url: "https://saenz-lab.github.io"
+baseurl: ""
+
+markdown: kramdown
+theme: null
+
+permalink: pretty
+
+collections:
+  people:
+    output: false
+  publications:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
