@@ -4,10 +4,10 @@ title: Home
 ---
 
 <section class="hero">
-  <h1>We study how membranes encode cellular function, and how to engineer them.</h1>
+  <h1>We study the design principles of cellular membranes, and how to engineer them.</h1>
   <p>
     The Saenz Lab combines lipid biochemistry, membrane biophysics, and synthetic genomics to
-    understand how membrane composition shapes phenotype, and to build programmable membranes for synthetic cells.
+    understand how membrane composition shapes membrane phenotype, and to build programmable membranes for synthetic cells.
   </p>
 </section>
 
