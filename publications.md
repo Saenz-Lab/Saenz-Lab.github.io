@@ -9,7 +9,7 @@ layout: page
 </p>
 
 <ul class="list">
-  <li>Justice and Saenz (2023) — A Tuneable Minimal Cell Membrane Reveals Two Key Roles of Sterols</li>
+  <li>Justice and Saenz (2023) — A Tuneable Minimal Cell Membrane Reveals Two Lipid Species Suffice for Life</li>
   <li>Safronova et al. (2024) — Temperature Change Elicits Lipidome Adaptation in Bacterial Membranes</li>
   <li>Nguyen et al. (2024) — Varying the Position of Phospholipid Acyl Chain Unsaturation Modulates Hopanoid and Sterol Ordering</li>
 </ul>
