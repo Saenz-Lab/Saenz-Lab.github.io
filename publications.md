@@ -1,22 +1,46 @@
 ---
 title: Publications
-subtitle: Peer-reviewed articles and preprints
+subtitle: Synced from ORCID
 layout: page
 ---
 
-## Complete publication list
+<div class="meta">
+  Source of truth: <a href="https://orcid.org/0000-0001-8901-4377">ORCID 0000-0001-8901-4377</a><br/>
+  Last sync: {% if site.data.publications.generated_at %}{{ site.data.publications.generated_at }}{% else %}not yet synced{% endif %}
+</div>
 
-The complete and up-to-date list of publications is maintained via **ORCID**:
+<hr/>
 
-- **ORCID:** https://orcid.org/0000-0001-8901-4377
-
-ORCID provides a curated, persistent record of publications, including DOIs and links to publisher versions and preprints.
-
-## Selected publications
-
-Below is a small selection highlighting themes central to the lab.  
-(For the full list, see ORCID above.)
-
-- Justice and Saenz (2023) — *A Tuneable Minimal Cell Membrane Reveals Two Lipid Species Suffice for Life*
-- Safronova et al. (2024) — *Temperature Change Elicits Lipidome Adaptation in Bacterial Membranes*
-- Nguyen et al. (2024) — *Varying the Position of Phospholipid Acyl Chain Unsaturation Modulates Hopanoid and Sterol Ordering*
+{% assign pubs = site.data.publications.items %}
+{% if pubs and pubs.size > 0 %}
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width:90px;">Year</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for p in pubs %}
+    <tr>
+      <td>{{ p.year }}</td>
+      <td>
+        {% if p.link and p.link != "" %}
+          <a href="{{ p.link }}">{{ p.title }}</a>
+        {% else %}
+          {{ p.title }}
+        {% endif %}
+        {% if p.journal and p.journal != "" %}
+          <div class="meta">{{ p.journal }}</div>
+        {% endif %}
+        {% if p.doi and p.doi != "" %}
+          <div class="meta">DOI: <a href="https://doi.org/{{ p.doi }}">{{ p.doi }}</a></div>
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>No publications loaded yet. Run the sync workflow once (see below).</p>
+{% endif %}
