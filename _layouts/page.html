@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="card">
+  {% if page.title %}
+    <h1 style="margin:0 0 8px 0; font-size:26px;">{{ page.title }}</h1>
+  {% endif %}
+  <div class="meta">{{ page.subtitle }}</div>
+  <div style="margin-top:12px;">
+    {{ content }}
+  </div>
+</article>
