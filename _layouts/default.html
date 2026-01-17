@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <small>Heidelberg</small>
+        </div>
+        <nav class="navlinks">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/research/' | relative_url }}">Research</a>
+          <a href="{{ '/people/' | relative_url }}">People</a>
+          <a href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a href="{{ '/join/' | relative_url }}">Join</a>
+          <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+      <footer class="footer">
+        <div>© {{ "now" | date: "%Y" }} Saenz Lab · Built with GitHub Pages</div>
+      </footer>
+    </main>
+  </body>
+</html>
