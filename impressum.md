@@ -7,7 +7,7 @@ permalink: /impressum/
 
 ## Angaben gemäß § 5 DDG
 
-Diese Website wird inhaltlich verantwortet von:
+Verantwortlich für den Inhalt dieser Website im Sinne des § 18 Abs. 2 MStV:
 
 **Prof. Dr. James P. Sáenz**
 Zentrum für Molekulare Biologie der Universität Heidelberg (ZMBH)
@@ -24,9 +24,11 @@ Universität Heidelberg
 Grabengasse 1
 69117 Heidelberg
 
-Die Universität Heidelberg ist eine Körperschaft des öffentlichen Rechts. Sie wird durch die Rektorin Prof. Dr. Frauke Melchior gesetzlich vertreten.
+Die Universität Heidelberg ist eine Körperschaft des öffentlichen Rechts. Sie wird durch die Rektorin, Prof. Dr. Frauke Melchior, gesetzlich vertreten.
 
-Umsatzsteuer-Identifikationsnummer: DE 811225433
+Zuständige Aufsichtsbehörde: Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg
+
+Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE 811225433
 
 ### Haftungsausschluss
 
