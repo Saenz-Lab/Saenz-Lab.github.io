@@ -1,0 +1,208 @@
+---
+layout: default
+title: People
+---
+
+<style>
+/* ── People page styles ── */
+.people-section { margin-bottom: 48px; }
+.people-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0 0 24px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1a1a2e;
+}
+
+/* ── Person cards ── */
+.people-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (min-width: 700px) {
+  .people-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .people-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.person-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f6f8fa;
+  border: 3px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+.person-photo-placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #f0f2f5;
+  border: 3px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.person-name {
+  margin: 0 0 2px 0;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1a1a2e;
+}
+.person-role {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #6b7280;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.person-bio {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 320px;
+}
+.person-links {
+  margin-top: 8px;
+  font-size: 13px;
+}
+.person-links a {
+  color: #0b5cab;
+  text-decoration: none;
+  margin: 0 6px;
+}
+.person-links a:hover { text-decoration: underline; }
+
+/* ── Alumni table ── */
+.alumni-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.alumni-table th {
+  text-align: left;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  padding: 8px 12px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #1a1a2e;
+  font-size: 14px;
+}
+.alumni-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #4b5563;
+}
+.alumni-table tr:hover td {
+  background: #f9fafb;
+}
+</style>
+
+<!-- ════════════════════════════════════════════ -->
+<!--  GROUP LEADER                               -->
+<!-- ════════════════════════════════════════════ -->
+<section class="people-section">
+  <h2>Group Leader</h2>
+  <div class="people-grid">
+    <div class="person-card">
+      <img class="person-photo" src="{{ '/assets/img/people/james.jpg' | relative_url }}" alt="James Sáenz">
+      <h3 class="person-name">Dr. James P. Sáenz</h3>
+      <p class="person-role">Group Leader</p>
+      <p class="person-bio">
+        Geochemist and biologist. Interested in lipids, RNA, pathogens, and the synthesis of life.
+      </p>
+      <div class="person-links">
+        <a href="https://bsky.app/profile/jamessaenz.bsky.social">Bluesky</a>
+        <a href="https://orcid.org/0000-0001-8901-4377">ORCID</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!--  CURRENT MEMBERS                            -->
+<!-- ════════════════════════════════════════════ -->
+<section class="people-section">
+  <h2>Current Members</h2>
+  <div class="people-grid">
+
+    <div class="person-card">
+      <!-- Replace with: assets/img/people/anh.jpg -->
+      <div class="person-photo-placeholder">AN</div>
+      <h3 class="person-name">Ha Ngoc Anh Nguyen</h3>
+      <p class="person-role">Predoc</p>
+      <p class="person-bio"><!-- Bio from questionnaire --></p>
+      <div class="person-links">
+        <!-- Links from questionnaire -->
+      </div>
+    </div>
+
+    <div class="person-card">
+      <!-- Replace with: assets/img/people/varvara.jpg -->
+      <div class="person-photo-placeholder">VK</div>
+      <h3 class="person-name">Varvara Kramkova</h3>
+      <p class="person-role">Student</p>
+      <p class="person-bio"><!-- Bio from questionnaire --></p>
+      <div class="person-links">
+        <!-- Links from questionnaire -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ -->
+<!--  ALUMNI                                     -->
+<!-- ════════════════════════════════════════════ -->
+<section class="people-section">
+  <h2>Alumni</h2>
+  <table class="alumni-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Time in lab</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Katja Dornig</td><td>Assistant</td><td></td></tr>
+      <tr><td>Tomasz Czerniak</td><td>Postdoc</td><td></td></tr>
+      <tr><td>Isaac Gabriel Justice</td><td>Guest Scientist</td><td></td></tr>
+      <tr><td>Theresa Helen Rudd</td><td>WHK</td><td></td></tr>
+      <tr><td>Uliana Afonina</td><td>WHK</td><td></td></tr>
+      <tr><td>Nataliya Safronova</td><td>Postdoc</td><td>03/2017 – 06/2024</td></tr>
+      <tr><td>Lisa Junghans</td><td>Technician</td><td>09/2016 – 03/2023</td></tr>
+      <tr><td>Pao-Wan Lee</td><td>WHK</td><td>05/2018 – 03/2022</td></tr>
+      <tr><td>Ivana Richter</td><td>SHK</td><td>04/2021 – 01/2022</td></tr>
+      <tr><td>Sandra Rizk</td><td>Predoc</td><td>11/2016 – 10/2021</td></tr>
+      <tr><td>Maren Gnädig</td><td>Technician</td><td>09/2016 – 09/2021</td></tr>
+      <tr><td>Grzegorz Chwastek</td><td>Postdoc</td><td>02/2017 – 05/2021</td></tr>
+      <tr><td>Ragunathan Bava Ganesh</td><td>SHK</td><td>12/2018 – 10/2020</td></tr>
+      <tr><td>Lisa-Maria Müller</td><td>SHK</td><td>01/2019 – 08/2019</td></tr>
+      <tr><td>Jui-Szu Chen</td><td>SHK</td><td>04/2019 – 08/2019</td></tr>
+      <tr><td>Florian Neugebauer</td><td>WHK</td><td>04/2019 – 08/2019</td></tr>
+      <tr><td>Magdalena Rucinska</td><td>WHK / Bioinformatician</td><td>02/2017 – 12/2018</td></tr>
+      <tr><td>Bartosz Kasprzak</td><td>WHK</td><td>03/2017 – 09/2018</td></tr>
+      <tr><td>Olga Sidorova</td><td>Master Student</td><td></td></tr>
+      <tr><td>Daniel Großer</td><td>Master Student</td><td></td></tr>
+      <tr><td>Martyna Broda</td><td>Master Student</td><td></td></tr>
+      <tr><td>Thibaut Lagny</td><td>Master Student</td><td></td></tr>
+    </tbody>
+  </table>
+</section>

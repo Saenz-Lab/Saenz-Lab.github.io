@@ -364,3 +364,113 @@ a:hover { text-decoration: underline; }
     font-size: 14px;
   }
 }
+
+/* ===================================================
+   People Page
+   =================================================== */
+.people-section { margin-bottom: 48px; }
+.people-section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0 0 24px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (min-width: 700px) {
+  .people-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .people-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.person-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface-2);
+  border: 3px solid var(--line);
+  margin-bottom: 16px;
+}
+.person-photo-placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #f0f2f5;
+  border: 3px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.person-name {
+  margin: 0 0 2px 0;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+}
+.person-role {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.person-bio {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 320px;
+}
+.person-links {
+  margin-top: 8px;
+  font-size: 13px;
+}
+.person-links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 6px;
+}
+.person-links a:hover { text-decoration: underline; }
+
+/* Alumni table */
+.alumni-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.alumni-table th {
+  text-align: left;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  padding: 8px 12px;
+  border-bottom: 2px solid var(--line);
+  color: var(--text);
+  font-size: 14px;
+}
+.alumni-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  color: var(--muted);
+}
+.alumni-table tr:hover td {
+  background: var(--surface-2);
+}
