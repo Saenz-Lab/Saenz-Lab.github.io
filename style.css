@@ -1,0 +1,413 @@
+/* ===================================================
+   Saenz Lab — style.css
+   Clean academic aesthetic · white base · restrained
+   =================================================== */
+
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f6f8fa;
+  --text: #1a1a2e;
+  --muted: #4b5563;
+  --muted-2: #6b7280;
+  --line: #e5e7eb;
+  --accent: #0b5cab;
+  --accent-light: #e8f0fa;
+  --max: 1040px;
+  --radius: 6px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* ---- Utility ---- */
+.meta {
+  color: var(--muted-2);
+  font-size: 14px;
+}
+
+/* ===================================================
+   Header / Navigation
+   =================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.brand a { color: var(--text); }
+.brand small {
+  color: var(--muted-2);
+  font-weight: 400;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.navlinks a {
+  margin-left: 20px;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.navlinks a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ===================================================
+   Hero Banner
+   =================================================== */
+.hero {
+  margin-top: 0;
+  padding: 56px 40px 48px;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.hero-tagline {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.hero-tagline em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* ===================================================
+   Intro Row: Research outlook + Bluesky feed
+   =================================================== */
+.intro-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 760px) {
+  .intro-row {
+    grid-template-columns: 3fr 2fr;
+    gap: 48px;
+  }
+}
+
+.intro-text h2,
+.intro-feed h2 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+}
+
+.intro-text p {
+  margin: 16px 0 0 0;
+  color: var(--muted);
+}
+
+/* Membrane video / animation */
+.intro-media {
+  margin: 16px 0;
+}
+
+.membrane-video {
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.media-caption {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted-2);
+}
+
+/* Bluesky embed container */
+.intro-feed {
+  min-width: 0;
+}
+
+.intro-feed bsky-embed {
+  display: block;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+/* ===================================================
+   Photo Carousel
+   =================================================== */
+.carousel-section {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder styling — remove once real images are added */
+.carousel-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--surface-2);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--muted-2);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.carousel-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ===================================================
+   "What we do" Pillar Cards
+   =================================================== */
+.pillars-section {
+  margin-top: 40px;
+}
+
+.card.pillar {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.card.pillar:hover {
+  background: var(--surface-2);
+  text-decoration: none;
+}
+
+.pillar-img-wrap {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  background: var(--surface-2);
+}
+
+.pillar-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder — remove once images are added */
+.pillar-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+
+.card.pillar h3 {
+  margin: 0 0 6px 0;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+}
+
+.card.pillar p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ===================================================
+   Grid + Cards (shared)
+   =================================================== */
+.grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.card {
+  grid-column: span 12;
+  padding: 20px 4px;
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 900px) {
+  .card.half { grid-column: span 6; }
+  .card.third { grid-column: span 4; }
+}
+
+.card h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.section-title {
+  margin: 40px 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ===================================================
+   Tables (publications)
+   =================================================== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.table th, .table td {
+  padding: 12px 8px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.table th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ===================================================
+   Footer
+   =================================================== */
+.footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted-2);
+  font-size: 13px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ===================================================
+   Mobile adjustments
+   =================================================== */
+@media (max-width: 600px) {
+  .hero {
+    padding: 36px 20px 32px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .navlinks a {
+    margin-left: 12px;
+    font-size: 14px;
+  }
+}
