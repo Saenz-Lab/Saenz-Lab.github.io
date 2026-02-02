@@ -4,7 +4,7 @@ subtitle: Open positions and how to apply
 layout: page
 ---
 
-We’re interested in people who like quantitative biology, molecular construction, and careful biophysics.
+We’re interested in people who like lipids, RNA, synthetic biology, and membrane biophysics.
 
 ## How to reach out
 Please email:
