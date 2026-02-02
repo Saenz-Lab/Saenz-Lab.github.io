@@ -4,20 +4,17 @@ title: Home
 ---
 
 <section class="hero">
-  <div class="hero-text">
-    <p class="hero-tagline">From <em>lipids</em> to <em>life</em></p>
-    <h1>Laboratory of Synthetic Membrane Biology</h1>
-  </div>
+  <p class="hero-tagline">From <em>lipids</em> to <em>life</em></p>
+  <h1>Laboratory of Synthetic Membrane Biology</h1>
 </section>
 
 <section class="intro-row">
   <div class="intro-text">
     <h2>Research outlook</h2>
     <div class="intro-media">
-      <!-- Replace src with your membrane animation file, e.g. assets/img/membrane.mp4 -->
       <video autoplay loop muted playsinline class="membrane-video">
         <source src="{{ '/assets/img/membrane.mp4' | relative_url }}" type="video/mp4">
-        <img src="{{ '/assets/img/membrane-placeholder.svg' | relative_url }}" alt="Membrane animation" />
+        <source src="{{ '/assets/img/membrane.mov' | relative_url }}" type="video/quicktime">
       </video>
       <span class="media-caption">Animation by Julia Eichhorn, MPI-CBG Graphics</span>
     </div>
@@ -43,9 +40,8 @@ title: Home
 
 <section class="carousel-section">
   <div class="carousel" id="labCarousel">
-    <!-- Replace these with your actual lab photos in assets/img/ -->
     <div class="carousel-slide active">
-      <div class="carousel-placeholder">Lab photo 1</div>
+      <div class="carousel-placeholder">Lab photo 1 — add images to assets/img/</div>
     </div>
     <div class="carousel-slide">
       <div class="carousel-placeholder">Lab photo 2</div>
@@ -60,87 +56,22 @@ title: Home
   <div class="carousel-dots" id="carouselDots"></div>
 </section>
 
-<section class="pillars-section">
-  <h2 class="section-title">What we do</h2>
-
-  <div class="grid">
-    <a class="card pillar half" href="{{ '/research/' | relative_url }}#composition">
-      <!-- Replace with your research area image: assets/img/pillar-ordering.png -->
-      <div class="pillar-img-wrap">
-        <div class="pillar-img-placeholder">Image</div>
-      </div>
-      <h3>Membrane phenotypes</h3>
-      <p>
-        How lipid composition and organization give rise to measurable physical
-        properties — order, permeability, stability — that constrain cellular function.
-      </p>
-    </a>
-
-    <a class="card pillar half" href="{{ '/research/' | relative_url }}#lipidomes">
-      <div class="pillar-img-wrap">
-        <div class="pillar-img-placeholder">Image</div>
-      </div>
-      <h3>Lipidomes as control spaces</h3>
-      <p>
-        Lipidomes as genetically encoded, adaptable design spaces whose composition
-        can be tuned to modulate membrane physical state and functional robustness.
-      </p>
-    </a>
-  </div>
-
-  <div class="grid">
-    <a class="card pillar third" href="{{ '/research/' | relative_url }}#minimal">
-      <div class="pillar-img-wrap">
-        <div class="pillar-img-placeholder">Image</div>
-      </div>
-      <h3>Minimal and synthetic cells</h3>
-      <p>
-        Genomically minimal cells as reduced experimental systems for
-        systematically rebuilding membrane complexity and revealing design principles.
-      </p>
-    </a>
-
-    <a class="card pillar third" href="{{ '/research/' | relative_url }}#regulation">
-      <div class="pillar-img-wrap">
-        <div class="pillar-img-placeholder">Image</div>
-      </div>
-      <h3>Regulation and homeostasis</h3>
-      <p>
-        How cells sense and regulate membrane physical state, coupling membrane
-        properties to lipid synthesis and gene regulation.
-      </p>
-    </a>
-
-    <a class="card pillar third" href="{{ '/research/' | relative_url }}#rna-lipid">
-      <div class="pillar-img-wrap">
-        <div class="pillar-img-placeholder">Image</div>
-      </div>
-      <h3>RNA–lipid interactions</h3>
-      <p>
-        How membrane composition and physical state influence RNA structure,
-        catalytic activity, and stability at membrane interfaces.
-      </p>
-    </a>
-  </div>
-</section>
-
 <script>
-// Minimal carousel script
 (function() {
-  const carousel = document.getElementById('labCarousel');
+  var carousel = document.getElementById('labCarousel');
   if (!carousel) return;
-  const slides = carousel.querySelectorAll('.carousel-slide');
-  const dotsContainer = document.getElementById('carouselDots');
-  let current = 0;
-
-  slides.forEach(function(_, i) {
-    const dot = document.createElement('button');
+  var slides = carousel.querySelectorAll('.carousel-slide');
+  var dotsContainer = document.getElementById('carouselDots');
+  var current = 0;
+  for (var i = 0; i < slides.length; i++) {
+    var dot = document.createElement('button');
     dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
     dot.setAttribute('aria-label', 'Slide ' + (i + 1));
-    dot.addEventListener('click', function() { goTo(i); });
+    (function(idx) {
+      dot.addEventListener('click', function() { goTo(idx); });
+    })(i);
     dotsContainer.appendChild(dot);
-  });
-
+  }
   function goTo(idx) {
     slides[current].classList.remove('active');
     dotsContainer.children[current].classList.remove('active');
@@ -148,9 +79,6 @@ title: Home
     slides[current].classList.add('active');
     dotsContainer.children[current].classList.add('active');
   }
-
-  setInterval(function() {
-    goTo((current + 1) % slides.length);
-  }, 5000);
+  setInterval(function() { goTo((current + 1) % slides.length); }, 5000);
 })();
 </script>
