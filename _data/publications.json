@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0001-8901-4377",
-  "generated_at": "2026-02-02T13:58:45Z",
+  "generated_at": "2026-03-01T07:03:39Z",
   "items": [
     {
       "title": "The secret life of RNA and lipids",
@@ -17,6 +17,14 @@
       "type": "preprint",
       "doi": "10.1101/2025.09.12.675810",
       "link": "https://doi.org/10.1101/2025.09.12.675810"
+    },
+    {
+      "title": "Effects of lipid membranes on RNA catalytic activity and stability",
+      "year": 2025,
+      "journal": "Biology of the Cell",
+      "type": "journal-article",
+      "doi": "10.1111/boc.202400115",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/effects-of-lipid-membranes-on-rna-catalytic-activity-and-stability(0a320f0b-37cc-418f-8c99-fdee5b103dba).html"
     },
     {
       "title": "Effects of lipid membranes on RNA catalytic activity and stability",
@@ -53,6 +61,14 @@
     {
       "title": "Temperature change elicits lipidome adaptation in the simple organisms Mycoplasma mycoides and JCVI-syn3B",
       "year": 2024,
+      "journal": "Cell reports",
+      "type": "journal-article",
+      "doi": "10.1016/j.celrep.2024.114435",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/temperature-change-elicits-lipidome-adaptation-in-the-simple-organisms-mycoplasma-mycoides-and-jcvisyn3b(9f3e25c8-ac5a-417a-ae16-b6e1eb8b6695).html"
+    },
+    {
+      "title": "Temperature change elicits lipidome adaptation in the simple organisms Mycoplasma mycoides and JCVI-syn3B",
+      "year": 2024,
       "journal": "Cell Reports",
       "type": "journal-article",
       "doi": "10.1016/j.celrep.2024.114435",
@@ -73,6 +89,14 @@
       "type": "preprint",
       "doi": "10.1101/2024.10.04.616688",
       "link": "https://doi.org/10.1101/2024.10.04.616688"
+    },
+    {
+      "title": "A tuneable minimal cell membrane reveals that two lipid species suffice for life",
+      "year": 2024,
+      "journal": "Nature communications",
+      "type": "journal-article",
+      "doi": "10.1038/s41467-024-53975-y",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/a-tuneable-minimal-cell-membrane-reveals-that-two-lipid-species-suffice-for-life(1f163c23-1a5e-4a36-934e-8ad58132c4b5).html"
     },
     {
       "title": "A tuneable minimal cell membrane reveals that two lipid species suffice for life",
@@ -169,6 +193,14 @@
       "type": "journal-article",
       "doi": "10.1111/mmi.14794",
       "link": "https://doi.org/10.1111/mmi.14794"
+    },
+    {
+      "title": "Effect of viscosity on microswimmers: a comparative study",
+      "year": 2021,
+      "journal": "ChemNanoMat",
+      "type": "journal-article",
+      "doi": "10.1002/cnma.202100119",
+      "link": "https://fis.tu-dresden.de/portal/en/publications/effect-of-viscosity-on-microswimmers(bd2d9abc-f352-4c14-928f-98a518365029).html"
     },
     {
       "title": "Effect of viscosity on microswimmers: a comparative study",
