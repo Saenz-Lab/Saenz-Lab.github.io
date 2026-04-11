@@ -451,6 +451,153 @@ a:hover { text-decoration: underline; }
 }
 .person-links a:hover { text-decoration: underline; }
 
+/* ===================================================
+   Research Page
+   =================================================== */
+.research-intro {
+  margin-bottom: 40px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.wiki-link-banner {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 24px;
+  background: var(--accent);
+  color: #fff !important;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 15px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-decoration: none !important;
+  transition: background 0.15s;
+}
+.wiki-link-banner:hover {
+  background: #094a8a;
+}
+
+.research-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 760px) {
+  .research-section {
+    flex-direction: row;
+    gap: 36px;
+  }
+  .research-section.img-right {
+    flex-direction: row;
+  }
+  .research-section.img-left {
+    flex-direction: row-reverse;
+  }
+  .research-text {
+    flex: 3;
+    min-width: 0;
+  }
+  .research-figure {
+    flex: 2;
+    min-width: 0;
+  }
+}
+
+.research-section h2 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+}
+
+.research-question {
+  font-style: italic;
+  color: var(--accent);
+  font-size: 15px;
+  margin: 0 0 16px 0;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+  line-height: 1.5;
+}
+
+.research-text p {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+}
+
+.key-pubs {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--surface-2);
+  font-size: 13px;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+.key-pubs strong {
+  font-weight: 600;
+  color: var(--muted);
+}
+.key-pubs a {
+  color: var(--muted-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.key-pubs a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  text-decoration: none;
+}
+
+.research-figure img {
+  width: 100%;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.research-figure-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  background: var(--surface-2);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+  padding: 16px;
+  line-height: 1.4;
+}
+
+.research-figure .media-caption {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--muted-2);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.research-all-pubs {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+.research-all-pubs a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
 /* Alumni table */
 .alumni-table {
   width: 100%;
