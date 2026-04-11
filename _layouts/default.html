@@ -31,5 +31,13 @@
         <div>&copy; {{ "now" | date: "%Y" }} Saenz Lab &middot; Built with GitHub Pages &middot; <a href="{{ '/impressum/' | relative_url }}">Impressum</a></div>
       </footer>
     </main>
+    <script>
+    document.querySelectorAll('a[href]').forEach(function(a) {
+      if (a.hostname && a.hostname !== location.hostname) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      }
+    });
+    </script>
   </body>
 </html>

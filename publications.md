@@ -5,7 +5,7 @@ layout: page
 ---
 
 <div class="meta">
-  Source of truth: <a href="https://orcid.org/0000-0001-8901-4377">ORCID 0000-0001-8901-4377</a><br/>
+  Source: <a href="https://orcid.org/0000-0001-8901-4377" target="_blank" rel="noopener">ORCID 0000-0001-8901-4377</a><br/>
   Last sync: {% if site.data.publications.generated_at %}{{ site.data.publications.generated_at }}{% else %}not yet synced{% endif %}
 </div>
 

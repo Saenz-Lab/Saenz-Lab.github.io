@@ -9,7 +9,7 @@ permalink: /research/
 
 We study how membranes are built, regulated, and adapted — combining membrane biophysics, lipidomics, and synthetic genomics to connect molecular composition to cellular function. Our goal is to decode the principles that make a living membrane work, and use them to engineer cells with programmable physical behaviours.
 
-<a href="/wiki/" class="wiki-link-banner">Explore our research wiki &rarr;</a>
+<a href="/wiki/" class="wiki-link-banner" target="_blank" rel="noopener">Explore our research wiki &rarr;</a>
 
 </div>
 
