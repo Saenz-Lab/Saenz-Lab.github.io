@@ -8,6 +8,17 @@ theme: null
 
 permalink: pretty
 
+exclude:
+  - saenz-lab-wiki
+  - wiki
+  - PLAN.md
+  - STYLE_GUIDE.md
+  - phase4-website-integration.md
+  - preview-research.html
+  - Gemfile
+  - CHANGES.md
+  - README.md
+
 collections:
   people:
     output: false
