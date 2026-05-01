@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0001-8901-4377",
-  "generated_at": "2026-04-01T07:53:06Z",
+  "generated_at": "2026-05-01T08:24:05Z",
   "items": [
     {
       "title": "The secret life of RNA and lipids",
@@ -49,6 +49,14 @@
       "type": "preprint",
       "doi": "10.1101/2025.02.24.639823",
       "link": "https://doi.org/10.1101/2025.02.24.639823"
+    },
+    {
+      "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
+      "year": 2024,
+      "journal": "Biophysical Journal",
+      "type": "journal-article",
+      "doi": "10.1016/j.bpj.2024.06.002",
+      "link": "https://doi.org/10.1016/j.bpj.2024.06.002"
     },
     {
       "title": "Varying the position of phospholipid acyl chain unsaturation modulates hopanoid and sterol ordering",
