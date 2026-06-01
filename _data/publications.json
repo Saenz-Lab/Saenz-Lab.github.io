@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0001-8901-4377",
-  "generated_at": "2026-05-01T08:24:05Z",
+  "generated_at": "2026-06-01T12:07:42Z",
   "items": [
     {
       "title": "The secret life of RNA and lipids",
@@ -81,6 +81,14 @@
       "type": "journal-article",
       "doi": "10.1016/j.celrep.2024.114435",
       "link": "https://doi.org/10.1016/j.celrep.2024.114435"
+    },
+    {
+      "title": "MemPrep, a new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
+      "year": 2024,
+      "journal": "The EMBO Journal",
+      "type": "journal-article",
+      "doi": "10.1038/s44318-024-00063-y",
+      "link": "https://doi.org/10.1038/s44318-024-00063-y"
     },
     {
       "title": "MemPrep, a new technology for isolating organellar membranes provides fingerprints of lipid bilayer stress",
