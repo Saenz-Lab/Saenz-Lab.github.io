@@ -1,7 +1,15 @@
 {
   "orcid": "0000-0001-8901-4377",
-  "generated_at": "2026-10-01T13:07:58Z",
+  "generated_at": "2026-11-01T13:16:21Z",
   "items": [
+    {
+      "title": "Why cells use many lipids when few will do",
+      "year": 2026,
+      "journal": "Nature Reviews Molecular Cell Biology",
+      "type": "journal-article",
+      "doi": "10.1038/s41580-026-01041-4",
+      "link": "https://doi.org/10.1038/s41580-026-01041-4"
+    },
     {
       "title": "The secret life of RNA and lipids",
       "year": 2025,
